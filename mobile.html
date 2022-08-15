@@ -39,17 +39,6 @@
 
 
 
-  <div class="clouds">
-    <div class="c1 one"></div>
-    <div class="c1 two"></div>
-    <div class="c1 three"></div>
-    <div class="c1 four"></div>
-    <div class="c2 one"></div>
-    <div class="c2 two"></div>
-    <div class="c2 three"></div>
-   
-  </div>
-</div>
 
 
 
@@ -118,7 +107,7 @@ body {
 }
 }
 
-embed {
+img {
     max-width: 100%;
     height: auto;
 border-radius:12px;
@@ -165,7 +154,7 @@ a {
 
 ul, ol {
     list-style: outside none none;
-    margin-top: 58px;
+    margin-top: 195px;
     padding: 0px;
 }
 
@@ -993,7 +982,7 @@ body .modal-backdrop {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 .bithu_v2_baner_sect{
     background: url(../images/nft/v2_banner_bG.png);
@@ -1131,7 +1120,7 @@ body .modal-backdrop {
     display: inline;
     align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;z-index: 99999;
 }
 .bithu_v1_baner_left h2 {
     font-family: 'Bakbak One';
@@ -1141,7 +1130,8 @@ body .modal-backdrop {
     line-height: 80px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 10px;z-index: 99999;
+    margin-bottom: 10px;z-index: 99999;  
+
 }
 .bithu_v1_baner_left h3 {
     font-family: 'Bakbak One';
@@ -1151,7 +1141,7 @@ body .modal-backdrop {
     line-height: 60px;
     text-transform: uppercase;
     margin-bottom: 8px;
-    color: #FFFFFF;
+    color: #FFFFFF;z-index: 99999;
 }
 
 .bithu_v1_baner_buttons{
@@ -1176,8 +1166,8 @@ body .modal-backdrop {
     text-align: center;
     color: #FFFFFF;
 }
-iframe {z-index: 999999;
-
+iframe {z-index: 99999;
+position: fixed;
    
     background: transparent;
         border: 0px solid #000;
@@ -1190,7 +1180,8 @@ iframe {z-index: 999999;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-   margin-bottom:-130px;
+   margin-bottom:-130px;   margin-left:-155px;
+
     color: #000;
 }
 
@@ -6176,7 +6167,7 @@ bithu_v1_baner_right_img img
 }
 
 body {
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -6203,6 +6194,9 @@ box-shadow: 0 0 10px #404040, 0 0 12px #000, 0 0 15px #404040,
 }
 
 .loader img {
+border:2px solid #534
+}
+embed {border-radius:12px;
 border:2px solid #534
 }
 .loader img:hover {
@@ -6380,7 +6374,7 @@ canvas{
   position: absolute;
   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/131045/clouds.png") 0 0 no-repeat;
   background-size: 100%;
-  z-index:999;opacity:0.2;
+  z-index:9;opacity:0.2;
 }
 .c1.one, .c2.one {
   top: -260px;
@@ -6421,54 +6415,6 @@ canvas{
 
 
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style media="screen">
-    * {
-     margin: 0;
-     padding: 0;
-   }
- 
-
-   body {
-     background-image: linear-gradient(to bottom, #030420, #000000 70%);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100vw;
-     height: 100vh;
-     overflow: hidden;
-   }
-
-
-
-   hr {
-     width: 50px;
-     border-color: transparent;
-     border-right-color: rgba(255, 255, 255, 0.7);
-     border-right-width: 50px;
-     position: absolute;
-     bottom: 100%;
-     transform-origin: 100% 50%;
-     animation-name: rain;
-     animation-duration: 1s;
-     animation-timing-function: linear;
-     animation-iteration-count: infinite;
-   }
-
-   @keyframes rain {
-     from {
-       transform: rotate(105deg) translateX(0);
-     } 
-     to {
-       transform: rotate(105deg) translateX(calc(100vh + 20px));
-     }
-   }
-
-
-  </style>
 </head>
 
 
@@ -6489,17 +6435,17 @@ canvas{
                             <h2><center>PUNKAPES 🎯 NFT collections</center></h2>
 							<center><embed src="./1.GIF" alt="avater" height="200" width="200"></center>
                             <h3><center><span class="count">139</span> / 10000 Minted</center></h3>
-							<h2><center><iframe
+							<center><h2><iframe
     title="Mint"
-    src="https://the-nft-generator.com/mint/?network=ethereum&contract=0x2bb71a21dc77822d99b67D73C02cD12D815740Fd&color=1d1b1b&brand=false"
+    src="https://the-nft-generator.com/mint/?network=rinkeby&contract=0xb559F8caD6aa8Fd0B185B849aF413d483CB3d0A2&color=1d1b1b&brand=false"
     width="300px"
     height="265px"
     style="max-width:100%;"
     frameborder="0"
-    ></iframe></center></h2>
+    ></iframe></h2></center>
                             
                             <ul>
-                                <li>Max 5 NFTs per wallet . Price 0.05 ETH + gas</li>
+                                <li>Max 5 NFTs per wallet . Price 0.05 ETH</li>
                                 <li>MINT IS LIVE <span>UNTIL 20 AUG 12AM </span></li>
                                 <li>Minting : LIVE</li>
                             </ul>
@@ -6536,6 +6482,17 @@ canvas{
         <!-- main js -->
         <script src="./main.js.download"></script>
         
+  <div class="clouds">
+    <div class="c1 one"></div>
+    <div class="c1 two"></div>
+    <div class="c1 three"></div>
+    <div class="c1 four"></div>
+    <div class="c2 one"></div>
+    <div class="c2 two"></div>
+    <div class="c2 three"></div>
+   
+  </div>
+</div>
         <script>
             //footer popup img change
 
@@ -6567,6 +6524,54 @@ canvas{
         </script>
 	
 	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    * {
+     margin: 0;
+     padding: 0;
+   }
+ 
+
+   body {
+     background-image: linear-gradient(to bottom, #030420, #000000 70%);
+     display: inline;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+   }
+
+
+
+   hr {
+     width: 50px;
+     border-color: transparent;
+     border-right-color: rgba(255, 255, 255, 0.7);
+     border-right-width: 50px;
+     position: absolute;
+     bottom: 100%;
+     transform-origin: 100% 50%;
+     animation-name: rain;
+     animation-duration: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+   }
+
+   @keyframes rain {
+     from {
+       transform: rotate(105deg) translateX(0);
+     } 
+     to {
+       transform: rotate(105deg) translateX(calc(100vh + 20px));
+     }
+   }
+
+
+  </style>
 	 
 <script>
 var Bird = {
